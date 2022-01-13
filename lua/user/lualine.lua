@@ -45,7 +45,7 @@ local branch = {
 
 local location = {
 	"location",
-	padding = 0,
+	padding = 2,
 }
 
 -- cool function for progress
@@ -54,7 +54,7 @@ local progress = function()
 	local total_lines = vim.fn.line("$")
 	local chars = { "__", "▁▁", "▂▂", "▃▃", "▄▄", "▅▅", "▆▆", "▇▇", "██" }
 	local line_ratio = current_line / total_lines
-	local index = math.ceil(line_ratio * #chars)
+	local index = #chars - math.ceil(line_ratio * #chars) + 1
 	return chars[index]
 end
 
@@ -74,7 +74,11 @@ lualine.setup({
 	sections = {
 		lualine_a = { branch, diagnostics },
 		lualine_b = { mode },
-		lualine_c = {},
+		lualine_c = { {
+      "filename",
+      file_status = true,
+      path = 1
+    }},
 		-- lualine_x = { "encoding", "fileformat", "filetype" },
 		lualine_x = { diff, spaces, "encoding", filetype },
 		lualine_y = { location },
