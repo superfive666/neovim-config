@@ -9,8 +9,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
     "--depth",
     "1",
     "https://github.com/wbthomason/packer.nvim",
-    install_path,
-  }
+    install_path, }
   print "Installing packer close and reopen Neovim..."
   vim.cmd [[packadd packer.nvim]]
 end
@@ -104,6 +103,11 @@ return packer.startup(function(use)
 
   -- Colorizer for web development
   use "norcalli/nvim-colorizer.lua"
+
+  -- LSP Utility Popup Window
+  use "RishabhRD/popfix"
+  use "RishabhRD/nvim-lsputils"
+  use "hood/popui.nvim"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
