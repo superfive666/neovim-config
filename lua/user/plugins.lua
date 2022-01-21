@@ -99,6 +99,12 @@ return packer.startup(function(use)
   -- Hop Words
   use "phaazon/hop.nvim"
 
+  -- Ranger for file navigation in the system
+  use "kevinhwang91/rnvimr"
+
+  -- Colorizer for web development
+  use "norcalli/nvim-colorizer.lua"
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
