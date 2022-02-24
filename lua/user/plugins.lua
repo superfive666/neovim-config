@@ -64,6 +64,7 @@ return packer.startup(function(use)
 	-- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
 	-- use "lunarvim/darkplus.nvim"
 	use("haishanh/night-owl.vim")
+  use('folke/tokyonight.nvim')
 
 	-- cmp plugins
 	use("hrsh7th/nvim-cmp") -- The completion plugin
@@ -99,9 +100,6 @@ return packer.startup(function(use)
 	-- Hop Words
 	use("phaazon/hop.nvim")
 
-	-- Ranger for file navigation in the system
-	use("kevinhwang91/rnvimr")
-
 	-- Colorizer for web development
 	use("norcalli/nvim-colorizer.lua")
 
@@ -111,7 +109,10 @@ return packer.startup(function(use)
 	use("hood/popui.nvim")
 
 	-- Nvim Spectre
-	use("windwp/nvim-spectre")
+	-- use("windwp/nvim-spectre")
+
+  -- Multiple Cursor
+  use('terryma/vim-multiple-cursors')
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins

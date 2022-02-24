@@ -20,7 +20,9 @@ require "user.alpha"
 require "user.whichkey"
 require "user.autocommands"
 require "user.hop"
-require "user.ranger"
+-- require "user.ranger"
 require "user.colorizer"
 require "user.lsputils"
-require "user.spectre"
+-- require "user.spectre"
+
+require 'user.multi-cursor'
