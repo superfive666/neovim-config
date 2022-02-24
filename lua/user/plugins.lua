@@ -114,6 +114,9 @@ return packer.startup(function(use)
   -- Multiple Cursor
   use('terryma/vim-multiple-cursors')
 
+  -- Vim match
+  use('andymass/vim-matchup')
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
