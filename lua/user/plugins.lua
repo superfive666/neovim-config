@@ -64,7 +64,7 @@ return packer.startup(function(use)
 	-- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
 	-- use "lunarvim/darkplus.nvim"
 	use("haishanh/night-owl.vim")
-  use('folke/tokyonight.nvim')
+	use("folke/tokyonight.nvim")
 
 	-- cmp plugins
 	use("hrsh7th/nvim-cmp") -- The completion plugin
@@ -111,11 +111,14 @@ return packer.startup(function(use)
 	-- Nvim Spectre
 	-- use("windwp/nvim-spectre")
 
-  -- Multiple Cursor
-  use('terryma/vim-multiple-cursors')
+	-- Multiple Cursor
+	use("terryma/vim-multiple-cursors")
 
-  -- Vim match
-  use('andymass/vim-matchup')
+	-- Vim match
+	use("andymass/vim-matchup")
+
+	-- Line number relative
+	use("jeffkreeftmeijer/vim-numbertoggle")
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
