@@ -46,7 +46,12 @@ return packer.startup(function(use)
 	use("nvim-lua/popup.nvim") -- An implementation of the Popup API from vim in Neovim
 	use("nvim-lua/plenary.nvim") -- Useful lua functions used ny lots of plugins
 	use("windwp/nvim-autopairs") -- Autopairs, integrates with both cmp and treesitter
-	use("numToStr/Comment.nvim") -- Easily comment stuff
+	use({
+    -- This is the last commit/tag which will support neovim v0.6. So If you are using v0.6 I'll recommend sticking to this tag.
+    -- https://github.com/numToStr/Comment.nvim/releases/tag/v0.6
+    "numToStr/Comment.nvim",
+    tag = 'v0.6'
+  }) -- Easily comment stuff
 	use("kyazdani42/nvim-web-devicons")
 	use("kyazdani42/nvim-tree.lua")
 	use("akinsho/bufferline.nvim")
