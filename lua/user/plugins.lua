@@ -50,7 +50,7 @@ return packer.startup(function(use)
     -- This is the last commit/tag which will support neovim v0.6. So If you are using v0.6 I'll recommend sticking to this tag.
     -- https://github.com/numToStr/Comment.nvim/releases/tag/v0.6
     "numToStr/Comment.nvim",
-    tag = 'v0.6'
+    -- tag = 'v0.6'
   }) -- Easily comment stuff
 	use("kyazdani42/nvim-web-devicons")
 	use("kyazdani42/nvim-tree.lua")
