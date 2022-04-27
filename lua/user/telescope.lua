@@ -7,7 +7,23 @@ local actions = require "telescope.actions"
 
 telescope.setup {
   defaults = {
-
+    -- using vertical layout for bigger live grep window
+    layout_strategy = "horizontal",
+    layout_config = {
+      -- layout configuration for window sizing and direction
+      prompt_position = "bottom",
+      horizontal = {
+        width_padding = 0.04,
+        height_padding = 0.1,
+        preview_width = 0.7,
+      },
+      vertical = {
+        width_padding = 0.05,
+        height_padding = 1,
+        preview_height = 0.5,
+      },
+    },
+    -- other defaults configuration below
     prompt_prefix = " ",
     selection_caret = " ",
     path_display = { "smart" },

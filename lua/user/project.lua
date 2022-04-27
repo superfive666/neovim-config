@@ -23,7 +23,9 @@ project.setup({
 	detection_methods = { "pattern" },
 
 	---@usage patterns used to detect root dir, when **"pattern"** is in detection_methods
-	patterns = { ".git", "_darcs", ".hg", ".bzr", ".svn", "Makefile", "package.json" },
+  -- Do not include files like "Makefile" or "package.json"
+  -- This will make the nvim tree to jump between sub-projects that have multile project definitions
+	patterns = { ".git", "_darcs", ".hg", ".bzr", ".svn" },
 
 	---@ Show hidden files in telescope when searching for files in a project
 	show_hidden = false,
