@@ -39,6 +39,10 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
+-- Maximizer key map for window size
+keymap("n", "<C-w>m", ":MaximizerToggle<cr>", opts)
+keymap("n", "<C-g>", ":Glow<cr>", opts)
+
 -- Insert --
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)
