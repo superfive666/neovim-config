@@ -54,10 +54,11 @@ return packer.startup(function(use)
   }) -- Easily comment stuff
   use("kyazdani42/nvim-web-devicons")
   use("kyazdani42/nvim-tree.lua")
-  use("akinsho/bufferline.nvim")
+  -- Tagging is required for installing the latest bufferline
+  use({"akinsho/bufferline.nvim", tag='v2.*', requires = 'kyazdani42/nvim-web-devicons'})
+  use({"akinsho/toggleterm.nvim", tag='v1.*'})
   use("moll/vim-bbye")
   use("nvim-lualine/lualine.nvim")
-  use("akinsho/toggleterm.nvim")
   use("ahmedkhalf/project.nvim")
   use("lewis6991/impatient.nvim")
   use("lukas-reineke/indent-blankline.nvim")
