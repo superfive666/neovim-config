@@ -71,10 +71,10 @@ return packer.startup(function(use)
   -- use "lunarvim/darkplus.nvim"
   use("haishanh/night-owl.vim")
   use("folke/tokyonight.nvim")
-  use({
-    "arcticicestudio/nord-vim",
-    branch = "develop"
-  })
+  -- use({
+  --   "arcticicestudio/nord-vim",
+  --   branch = "develop"
+  -- })
 
   -- cmp plugins
   use("hrsh7th/nvim-cmp") -- The completion plugin
