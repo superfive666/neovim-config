@@ -1,0 +1,20 @@
+{
+  "languageserver": {
+    "go": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod"],
+      "trace.server": "verbose",
+      "filetypes": ["go"]
+    }
+  },
+  "java.import.maven.enabled": true,
+  "java.completion.overwrite": false,
+  "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:c:/Users/evang/binaries/lombok.jar -Xbootclasspath/a:c:/Users/evang/binaries/lombok.jar",
+  "java.format.onType.enabled": true,
+  "java.completion.guessMethodArguments": true,
+  "java.codeGeneration.useBlocks": true,
+  "java.errors.incompleteClasspath.severity": "ignore",
+  "java.signatureHelp.enabled": true,
+  "java.format.settings.url": "https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-java-google-style.xml",
+  "java.maven.downloadSources": true
+}
