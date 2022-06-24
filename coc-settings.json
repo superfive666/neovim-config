@@ -23,5 +23,9 @@
       "path": "/opt/homebrew/opt/openjdk@17",
       "default": true
     }
-  ]
+  ],
+  "eslint.packageManager": "yarn",
+  "eslint.nodePath": ".yarn/sdks",
+  "workspace.workspaceFolderCheckCwd": false,
+  "tsserver.tsdk": ".yarn/sdks/typescript/lib"
 }
