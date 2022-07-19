@@ -137,9 +137,10 @@ return packer.startup(function(use)
 	-- Install COC
 	use({ "neoclide/coc.nvim", branch = "master", run = "yarn install --frozen-lockfile" })
 	use({ "neoclide/coc-java", branch = "master", run = "yarn install --frozen-lockfile" })
+	use({ "fannheyward/coc-pyright", branch = "master" })
 
-  -- For jenkins pipeline script linter
-  use({'ckipp01/nvim-jenkinsfile-linter', requires = { "nvim-lua/plenary.nvim" } })
+	-- For jenkins pipeline script linter
+	use({ "ckipp01/nvim-jenkinsfile-linter", requires = { "nvim-lua/plenary.nvim" } })
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins

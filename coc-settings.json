@@ -7,6 +7,7 @@
       "filetypes": ["go"]
     }
   },
+
   "java.home": "/opt/homebrew/opt/openjdk@17",
   "java.import.maven.enabled": true,
   "java.completion.overwrite": false,
@@ -24,8 +25,11 @@
       "default": true
     }
   ],
+
   "eslint.packageManager": "yarn",
   "eslint.nodePath": ".yarn/sdks",
   "workspace.workspaceFolderCheckCwd": false,
-  "tsserver.tsdk": ".yarn/sdks/typescript/lib"
+  "tsserver.tsdk": ".yarn/sdks/typescript/lib",
+
+  "python.linting.pylintEnabled": true
 }
