@@ -31,5 +31,16 @@
   "workspace.workspaceFolderCheckCwd": false,
   "tsserver.tsdk": ".yarn/sdks/typescript/lib",
 
-  "python.linting.pylintEnabled": true
+  "python.sortImports.path": "/usr/bin/isort",
+  "pyright.enable": true,
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": true,
+  "python.pythonPath": "/usr/bin/python3",
+  "python.formatting.provider": "autopep8",
+  "python.formatting.autopep8Path": "/Users/chao.wu/Library/Python/3.8/bin/autopep8",
+  "python.formatting.autopep8Args": [
+    "--max-line-length=100",
+    "--indent-size=2",
+    "--ignore=E121"
+  ]
 }
