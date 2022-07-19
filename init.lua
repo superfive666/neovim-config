@@ -26,3 +26,4 @@ require "user.lsputils"
 -- require "user.spectre"
 
 require 'user.multi-cursor'
+require "user.jenkins"
