@@ -40,7 +40,7 @@
   "python.formatting.autopep8Path": "/Users/chao.wu/Library/Python/3.8/bin/autopep8",
   "python.formatting.autopep8Args": [
     "--max-line-length=100",
-    "--indent-size=2",
+    "--indent-size=4",
     "--ignore=E121"
   ]
 }
