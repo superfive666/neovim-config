@@ -56,7 +56,7 @@ return packer.startup(function(use)
 	use("kyazdani42/nvim-tree.lua")
 	-- Tagging is required for installing the latest bufferline
 	use({ "akinsho/bufferline.nvim", tag = "v2.*", requires = "kyazdani42/nvim-web-devicons" })
-	use({ "akinsho/toggleterm.nvim", tag = "v1.*" })
+	use({ "akinsho/toggleterm.nvim", tag = "*" })
 	use("moll/vim-bbye")
 	use("nvim-lualine/lualine.nvim")
 	use("ahmedkhalf/project.nvim")
