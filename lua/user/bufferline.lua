@@ -50,7 +50,6 @@ bufferline.setup({
     diagnostics_indicator = function(count, level, diagnostics_dict, context)
       if context.buffer:current() then
         local erro_count = diagnostics_dict["error"] or 0
-        local warn_count = diagnostics_dict["warning"] or 0
         local hint_count = diagnostics_dict["hint"] or 0
         local info_count = diagnostics_dict["info"] or 0
 
@@ -60,12 +59,8 @@ bufferline.setup({
           area_message = area_message .. "  " .. erro_count
         end
 
-        if warn_count ~= 0 then
-          area_message = area_message .. "  " .. warn_count
-        end
-
         if hint_count ~= 0 then
-          area_message = area_message .. "  " .. hint_count
+          area_message = area_message .. "  " .. hint_count
         end
 
         if info_count ~= 0 then
