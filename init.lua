@@ -25,5 +25,6 @@ require "user.colorizer"
 require "user.lsputils"
 -- require "user.spectre"
 
-require 'user.multi-cursor'
+require "user.multi-cursor"
 require "user.jenkins"
+require "user.transparent"

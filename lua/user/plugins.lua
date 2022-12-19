@@ -142,6 +142,9 @@ return packer.startup(function(use)
 	-- For jenkins pipeline script linter
 	use({ "ckipp01/nvim-jenkinsfile-linter", requires = { "nvim-lua/plenary.nvim" } })
 
+  -- Making neovim transparent
+  use("xiyaowong/nvim-transparent")
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
