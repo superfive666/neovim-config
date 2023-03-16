@@ -1,6 +1,6 @@
 vim.cmd [[
 try
-  colorscheme tokyonight-moon
+  colorscheme tokyonight
 catch /^Vim\%((\a\+)\)\=:E185/
   colorscheme default
   set background=dark

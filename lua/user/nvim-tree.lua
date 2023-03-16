@@ -73,7 +73,7 @@ nvim_tree.setup {
     timeout = 500,
   },
   view = {
-    width = 50,
+    width = 40,
     hide_root_folder = true,
     side = "left",
     mappings = {
@@ -91,4 +91,19 @@ nvim_tree.setup {
     cmd = "trash",
     require_confirm = true,
   },
+  renderer = {
+    icons = {
+      glyphs = {
+        git = {
+          unstaged = "x",
+          staged = "✓",
+          unmerged = "",
+          renamed = "➜",
+          untracked = "★",
+          deleted = "",
+          ignored = "◌",
+        }
+      }
+    }
+  }
 }
