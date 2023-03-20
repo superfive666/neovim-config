@@ -67,14 +67,7 @@ return packer.startup(function(use)
 	use("folke/which-key.nvim")
 
 	-- Colorschemes
-	-- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
-	-- use "lunarvim/darkplus.nvim"
-	use("haishanh/night-owl.vim")
 	use("folke/tokyonight.nvim")
-	-- use({
-	--   "arcticicestudio/nord-vim",
-	--   branch = "develop"
-	-- })
 
 	-- cmp plugins
 	use("hrsh7th/nvim-cmp") -- The completion plugin
@@ -118,9 +111,6 @@ return packer.startup(function(use)
 	use("RishabhRD/nvim-lsputils")
 	use("hood/popui.nvim")
 
-	-- Nvim Spectre
-	-- use("windwp/nvim-spectre")
-
 	-- Multiple Cursor
 	use("terryma/vim-multiple-cursors")
 
@@ -130,20 +120,9 @@ return packer.startup(function(use)
 	-- Line number relative
 	use("jeffkreeftmeijer/vim-numbertoggle")
 
-	-- Glow package
-	-- use('ellisonleao/glow.nvim', { branch = 'main' })
-	-- use('szw/vim-maximizer')
-
 	-- Install COC
-	use({ "neoclide/coc.nvim", branch = "master", run = "yarn install --frozen-lockfile" })
-	use({ "neoclide/coc-java", branch = "master", run = "yarn install --frozen-lockfile" })
+	use({ "neoclide/coc.nvim", branch = "release" })
 	use({ "fannheyward/coc-pyright", branch = "master" })
-
-	-- For jenkins pipeline script linter
-	use({ "ckipp01/nvim-jenkinsfile-linter", requires = { "nvim-lua/plenary.nvim" } })
-
-  -- Making neovim transparent
-  use("xiyaowong/nvim-transparent")
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
