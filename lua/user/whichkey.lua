@@ -85,6 +85,10 @@ local mappings = {
     "Buffers",
   },
   ["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
+  ["d"] = {
+    name = "Github Copilot",
+    p = { "<cmd>Copilot panel<CR>", "Copilot panel" }
+  },
   ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
   ["f"] = {
     "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
