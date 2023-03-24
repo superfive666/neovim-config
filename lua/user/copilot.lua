@@ -5,7 +5,7 @@ end
 
 copilot.setup({
   panel = {
-    enabled = true,
+    enabled = false,
     auto_refresh = false,
     keymap = {
       jump_prev = "[[",
@@ -26,7 +26,7 @@ copilot.setup({
     keymap = {
       accept = "<M-l>",
       accept_word = false,
-      accept_line = false,
+      accept_line = "<C-l>",
       next = "<M-]>",
       prev = "<M-[>",
       dismiss = "<C-]>",
