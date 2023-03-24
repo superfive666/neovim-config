@@ -125,6 +125,7 @@ return packer.startup(function(use)
 	use({ "fannheyward/coc-pyright", branch = "master" })
 
   -- github copilot
+  use("github/copilot.vim")
   use("zbirenbaum/copilot.lua")
   use({
     "zbirenbaum/copilot-cmp",

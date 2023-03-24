@@ -5,8 +5,8 @@ end
 
 copilot.setup({
   panel = {
-    enabled = false,
-    auto_refresh = false,
+    enabled = true,
+    auto_refresh = true,
     keymap = {
       jump_prev = "[[",
       jump_next = "]]",
@@ -20,7 +20,7 @@ copilot.setup({
     },
   },
   suggestion = {
-    enabled = false,
+    enabled = true,
     auto_trigger = true,
     debounce = 75,
     keymap = {
