@@ -42,6 +42,7 @@ local kind_icons = {
   Event = "",
   Operator = "",
   TypeParameter = "",
+  copilot = "",
 }
 -- find more here: https://www.nerdfonts.com/cheat-sheet
 
@@ -64,7 +65,13 @@ cmp.setup({
     }),
     -- Accept currently selected item. If none selected, `select` first item.
     -- Set `select` to `false` to only confirm explicitly selected items.
-    ["<CR>"] = cmp.mapping.confirm({ select = true }),
+    ["<CR>"] = cmp.mapping.confirm({
+      -- this is the important line
+      -- behavior = cmp.ConfirmBehavior.Replace,
+
+      -- direct replace for the current word
+      select = true
+    }),
     ["<Tab>"] = cmp.mapping(function(fallback)
       if cmp.visible() then
         cmp.select_next_item()
@@ -101,6 +108,7 @@ cmp.setup({
       vim_item.kind = string.format("%s %s", kind_icons[vim_item.kind], vim_item.kind)
       -- vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
       vim_item.menu = ({
+        copilot = "[Copilot]",
         nvim_lsp = "[LSP]",
         luasnip = "[Snippet]",
         buffer = "[Buffer]",
@@ -110,10 +118,11 @@ cmp.setup({
     end,
   },
   sources = {
+    { name = "copilot" },
     { name = "nvim_lsp" },
     { name = "luasnip" },
     { name = "buffer" },
-    { name = "path" },
+    { name = "path" }
   },
   confirm_opts = {
     behavior = cmp.ConfirmBehavior.Replace,
