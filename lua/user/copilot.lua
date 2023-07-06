@@ -10,7 +10,7 @@ copilot.setup({
     keymap = {
       jump_prev = "[[",
       jump_next = "]]",
-      accept = "<CR>",
+      accept = "<Tab>",
       refresh = "gr",
       open = "<M-CR>"
     },

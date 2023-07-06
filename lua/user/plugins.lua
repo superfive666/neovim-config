@@ -135,6 +135,10 @@ return packer.startup(function(use)
     end
   })
 
+  -- for typing chinese characters
+  use("yehuohan/cmp-im")
+  use("yehuohan/cmp-im-zh")
+
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then

@@ -15,6 +15,18 @@ local check_backspace = function()
   return col == 0 or vim.fn.getline("."):sub(col, col):match("%s")
 end
 
+local cmp_im = require('cmp_im')
+cmp_im.setup{
+  -- Enable/Disable IM
+  enable = true,
+  -- IM tables path array
+  tables = require('cmp_im_zh').tables{ 'pinyin' },
+  -- Function to format IM-key and IM-tex for completion display
+  format = function(key, text) return vim.fn.printf('%-15S %s', text, key) end,
+  -- Max number entries to show for completion of each table
+  maxn = 8,
+}
+
 --   פּ ﯟ   some other good icons
 local kind_icons = {
   Text = "",
@@ -113,17 +125,19 @@ cmp.setup({
         luasnip = "[Snippet]",
         buffer = "[Buffer]",
         path = "[Path]",
+        IM = "[Chinese]",
       })[entry.source.name]
       return vim_item
     end,
   },
-  sources = {
+  sources = cmp.config.sources({
     { name = "copilot" },
     { name = "nvim_lsp" },
     { name = "luasnip" },
     { name = "buffer" },
-    { name = "path" }
-  },
+    { name = "path" },
+    { name = "IM" }
+  }),
   confirm_opts = {
     behavior = cmp.ConfirmBehavior.Replace,
     select = false,
