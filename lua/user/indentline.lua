@@ -25,6 +25,7 @@ indent_blankline.setup({
       "IndentBlanklineIndent6"
     }
   },
+
   -- indent_blankline_buftype_exclude
   -- indent_blankline_filetype_exclude
   -- both of the above variables are migrated to the exclude option objects
@@ -42,6 +43,12 @@ indent_blankline.setup({
   },
 
   -- show_current_context: it is on by default
-  scope = { enabled = true }
+  scope = {
+    enabled = true,
+    highlight = {
+      "Function",
+      "Label"
+    }
+  }
 })
 
